@@ -11,7 +11,6 @@ Make sure that you have the following:
 
 ## Manual:
 <p align="left">
-  <br>
   <a href="https://github.com/DeepKariaX/Network-Scanner-Flask/blob/main/Manual/Network_Scanner_Manual.pdf" class="image fit">
   	<img style="height: 250px" src="https://github.com/DeepKariaX/Network-Scanner-Flask/blob/main/Manual/Network_Scanner_Manual_Cover.png" alt="">
   </a>
