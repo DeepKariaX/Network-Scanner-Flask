@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Network Scanner</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="keywords" content="network scanner, template, html, sass, jquery">
+  <link href="{{ url_for('static', filename= 'main/css/main.css') }}" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<!-- notification for small viewports and landscape oriented smartphones -->
+<div class="device-notification">
+  <a class="device-notification--logo" href="#0">
+    <img src="{{ url_for('static', filename= 'main/img/logo.png') }}" alt="Global">
+    <p>Network Scanner</p>
+  </a>
+  <p class="device-notification--message">We have so much to offer that we must request you orient your device to portrait or find a larger screen. You won't be disappointed.</p>
+</div>
+
+<div class="perspective effect-rotate-left">
+  <div class="container"><div class="outer-nav--return"></div>
+    <div id="viewport" class="l-viewport">
+      <div class="l-wrapper">
+        <header class="header">
+          
+          <a href="/scan_home" style="text-decoration: none;color: white;">
+            <button class="header--cta cta">Scanner</button>
+          </a>
+          
+          <div class="header--nav-toggle">
+            <span></span>
+          </div>
+        </header>
+        <nav class="l-side-nav">
+          <ul class="side-nav">
+            <li class="is-active"><span>Home</span></li>
+            <li><span>Team</span></li>
+            <li><span>Contact Us</span></li>
+            <li><span>About Us</span></li>
+          </ul>
+        </nav>
+        <ul class="l-main-content main-content">
+          <li class="l-section section section--is-active">
+            <div class="intro">
+              <div class="intro--banner">
+                <!-- <h1>Tool Which<br>Exploits<br>Vulnerabilities</h1> -->
+                <h1>Network<br>Scanner<br>{ Exploiting <br> Open Ports }</h1>
+                <!-- <form action="/bhagmilkhabhag" method="POST"> -->
+                
+                  
+<a href="/scan_home" style="text-decoration: none;color: white;">
+                <button class="cta">
+
+                  Scanner
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                  </g>
+                  </svg>
+                  <span class="btn-background"></span>
+                
+                </button>
+                </a>
+
+                <!-- </form> -->
+                <img src="{{ url_for('static', filename= 'main/img/introduction-visual.png') }}" alt="Welcome">
+              </div>
+              <div class="intro--options">
+                <a>
+                  <h3>Albert Einstein</h3>
+                  <p>“It has become appallingly obvious that our technology has exceeded our humanity.”</p>
+                </a>
+                <a>
+                  <h3>Edward Snowden</h3>
+                  <p>"Privacy matters; privacy is what allows us to determine who we are and who we want to be"</p>
+                </a>
+                <a>
+                  <h3>Jodi Rell</h3>
+                  <p> ”Once you’ve lost your privacy, you realize you’ve lost an extremely valuable thing.”</p>
+                </a>
+
+              </div>
+            </div>
+          </li>
+          <li class="l-section section">
+            <div class="work">
+              <h2>Team</h2>
+              <div class="work--lockup">
+                <ul class="slider">
+                  <li class="slider--item slider--item-left">
+                    <a>
+                      <div class="slider--item-image">
+                        <img src="{{ url_for('static', filename= 'main/img/viraj.png') }}" alt="Viraj Patel">
+                      </div>
+                      <p class="slider--item-title">Viraj Patel</p>
+                      <a class="fa fa-instagram" href="https://www.instagram.com/viraj_5022/" style="color:white"></a>
+                      &nbsp;&nbsp;<a class="fa fa-linkedin" href="https://www.linkedin.com/in/viraj-patel-3a60731a8/" style="color:white"></a>
+                     <!--  <p class="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+                       -->
+                    </a>
+
+                  </li>
+                  <li class="slider--item slider--item-center">
+                    <a>
+                      <div class="slider--item-image">
+                        <img src="{{ url_for('static', filename= 'main/img/deep.png') }}" alt="Deep Karia">
+                      </div>
+                      <p class="slider--item-title">Deep Karia</p>
+                      <!-- <p class="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p> -->
+                      <a class="fa fa-instagram" href="https://www.instagram.com/dexy_deep/" style="color:white"></a>
+                      &nbsp;&nbsp;<a class="fa fa-linkedin" href="https://www.linkedin.com/in/deep-karia-2436b2194/" style="color:white"></a>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-right">
+                    <a>
+                      <div class="slider--item-image">
+                        <img src="{{ url_for('static', filename= 'main/img/heet.png') }}" alt=">Heet Bodara">
+                      </div>
+                      <p class="slider--item-title">Heet Bodara</p>
+                     <!--  <p class="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p> -->
+                   <a class="fa fa-instagram" href="https://www.instagram.com/_.hh.bodara.0201._/" style="color:white"></a>&nbsp;&nbsp;<a class="fa fa-linkedin" href="https://www.linkedin.com/in/heet-bodara-16aa39193/" style="color:white"></a>
+                    </a>
+                    </a>
+                  </li>
+                  <li class="slider--item">
+                    <a>
+                      <div class="slider--item-image">
+                        <img src="{{ url_for('static', filename= 'main/img/bhaven.png') }}" alt=">Bhaven Chheda">
+                      </div>
+                      <p class="slider--item-title">Bhaven Chheda</p>
+                      <!-- <p class="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p> -->
+                      <a class="fa fa-instagram" href="https://www.instagram.com/bhaven_719/" style="color:white"></a>&nbsp;&nbsp;<a class="fa fa-linkedin" href="https://www.linkedin.com/in/bhaven-chheda-5774121a0/" style="color:white"></a>
+                    </a>
+                  </li>
+                </ul>
+                <div class="slider--prev">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
+                    c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
+                    c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z"/>
+                  </g>
+                  </svg>
+                </div>
+                <div class="slider--next">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                  </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </li>
+ <!--          <li class="l-section section">
+            <div class="about">
+              <div class="about--banner">
+              	<br>
+              	<h2>About <br>Us:</h2>
+                <h3>Implement a Network Scanner <br> and analyse responses to identify vulnerabilities.</h3>
+                <img src="assets/img/about-visual.png" alt="About Us">
+              </div>
+              <div class="about--options">
+                <a href="#0">
+                  <h3>Winners</h3>
+                </a>
+                <a href="#0">
+                  <h3>Philosophy</h3>
+                </a>
+                <a href="#0">
+                  <h3>History</h3>
+                </a>
+              </div>
+            </div>
+          </li> -->
+          <li class="l-section section">
+            <div class="contact">
+              <div class="contact--lockup">
+                <div class="modal">
+                  <div class="modal--information">
+                    <h2>Contact Us: </h2>
+                  </div>
+                  <ul class="modal--options">
+                    <li><a href="tel:+919998870922">Call Us</a></li>
+                    <li><a href="https://www.google.com/maps/place/ICT+Ganpat+university/@23.0758665,72.5240219,17z/data=!3m1!4b1!4m5!3m4!1s0x395e834be1083d4b:0xad88fa1e16e789e4!8m2!3d23.075866!4d72.5261935">Our Location</a></li>
+                    <li><a href="mailto:network.scanner.C3@gmail.com">Mail Us</a></li>
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+
+
+<!--           <li class="l-section section" style="background-image: url( '{{ url_for('static', filename= 'main/img/introduction-visual1.png') }} '  );background-repeat: no-repeat;">
+            <div class="about">
+
+              <div class="about--banner">
+                <h1>About Us:</h1>
+                <h3>Implement a Network Scanner <br> and analyse responses to identify vulnerabilities.</h3>
+                <h3>We Have Built A Network Scanner Which Identifies Potential <br>Open Ports And Filtered Ports Which 
+                  Helps Enterprises To <br> Identifies Their Webisite's Vulnerabilities.</h3>
+                <img src="{{ url_for('static', filename= 'main/img/about-visual.png') }}" alt="About Us">
+                
+              </div>
+              <h1>Technologies:</h1>
+              <div class="about--options">
+                <a href="#0">
+                  <h3>NMAP</h3>
+                </a>
+                <a href="#0">
+                  <h3>Flask</h3>
+                </a>
+                <a href="#0">
+                  <h3>History</h3>
+                </a>
+              </div>
+            </div>
+          </li> -->
+
+
+           <li class="l-section section">
+            <div class="intro">
+              <div class="intro--banner">
+
+                <div class="about--banner">
+                <h1>About Us:</h1>
+                <p style="font-size: 18px">-> We Have Built A Network Scanner Which Identifies <br> Potential Open Ports And Filtered Ports Which Helps <br> Enterprises To Identifies Their Website's Vulnerabilities <br> And Improve Them !</p>
+
+                <p style="font-size: 18px">-> For More Information Regarding The Scanner Read <br> Our Instruction File And The Proper Inputs Required<br> For Desired Output Of The Scanner. </p>
+
+                <a href="{{ url_for('static', filename= 'main/Network Scanner Manual.pdf') }}" style="text-decoration: none;color: white;" download>
+                <button class="cta">
+
+                  Read Me
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  </svg>
+                  <span class="btn-background"></span>
+                
+                </button>
+                </a>
+
+                
+
+                </div>
+                <img src="{{ url_for('static', filename= 'main/img/about.png') }}" alt="Welcome">
+              </div>
+
+              <p style="font-size: 15px;color: red">Note: <br> This Tool Has Been Made Available For Informational And Educational Purposes Only. <br> The Tool Gives Accurate Result, So For More Port Range It Will Take Some Time, Else Select Short Port Range.</p>
+
+            </div>
+          </li>
+
+
+
+
+
+<!--           <li class="l-section section">
+            <div class="hire">
+              <h2>Technologies</h2> -->
+              <!-- checkout formspree.io for easy form setup -->
+             
+<!--                 <div class="work-request--options">
+                  <span class="options-a">
+                    <a id="opt-1" type="checkbox"></a>
+                    <label for="opt-1">
+                      NMAP
+                    </label>
+                    <a id="opt-2" type="checkbox"></a>
+                    <label for="opt-2">
+                      Flask
+                    </label>
+                    <a id="opt-3" type="checkbox"></a>
+                    <label for="opt-3">
+                      Jinja2
+                    </label>
+                  </span> -->
+<!--                   <span class="options-b">
+                    <input id="opt-4" type="checkbox" value="ux design">
+                    <label for="opt-4">
+                      Socket Programming
+                    </label>
+                    <input id="opt-5" type="checkbox" value="webdesign">
+                    <label for="opt-5">
+                      Webdesign
+                    </label>
+                    <input id="opt-6" type="checkbox" value="marketing">
+                    <label for="opt-6">
+                      Python
+                    </label>
+                  </span> -->
+                <!-- </div> -->
+
+
+                <!-- <h2>Message</h2>
+                <form class="work-request" method="POST" action="/SendMailQuery">
+                <div class="work-request--information">
+
+                  <div class="information-name">
+                    <input id="name" type="text" spellcheck="false" name="name_" style="font-size: 15px">
+                    <label for="name">Name</label>
+                  </div>
+                  <div class="information-email">
+                    <input id="email" type="email" spellcheck="false" name="mail" style="font-size: 15px">
+                    <label for="email">Email</label>
+                  </div>
+                </div>
+                <div class="work-request--information">
+                  <div class="information-email">
+                    <input id="query" type="text" spellcheck="false" name="qry" style="font-size: 15px">
+                    <label for="query">Message</label>
+                  </div>
+                  <input type="submit" value="Send" style="width: 320px">
+                </div>
+              </form>
+            </div>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+  </div>
+  <ul class="outer-nav">
+    <li class="is-active">Home</li>
+    <li>Team</li>
+    <li>Contact Us</li>
+    <li>About Us</li>
+  </ul>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="{{ url_for("static", filename= "main/js/vendor/jquery-2.2.4.min.js") }}"><\/script>')</script>
+<script src="{{ url_for('static', filename= 'main/js/functions-min.js') }}"></script>
+</body>
+</html>

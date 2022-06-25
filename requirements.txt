@@ -1,0 +1,5 @@
+Flask==2.0.1
+nmap==0.0.1
+python_nmap==0.6.4
+re2==0.2.24
+validators==0.18.2

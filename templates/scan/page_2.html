@@ -1,0 +1,142 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="colorlib.com">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400" rel="stylesheet" />
+    <link href="{{ url_for('static', filename= 'scan/css/main.css') }}" rel="stylesheet" />
+  </head>
+  <body>
+
+<!-- <h5>{{ err }}</h5> -->
+
+    <div class="s132">
+      <form action="/" method="post">
+        <div class="inner-form">
+            
+            <div style="height: 500px;width: 900px; background-color: black;opacity: 0.45; border : 1px groove white;">
+              <br>
+              <center>
+<b>
+            <h2 style="color: white;">| NMAP Port Scanner |</h2>
+
+              <table style=" font-family: Courier New; font-size: 20px; color: white;">
+
+                <tr>
+                  <td><h3 style="color: white;text-decoration: underline;">IP Information :</h3></td>
+                </tr>
+
+                <tr>
+                  <td style="padding-right: 140px">IP Address: {{ i_u }}</td>
+                  <td>Host Name: {{ host_nm }}</td>
+                </tr>
+
+                <tr>
+                  <td>Protocol: {{ prot }}</td>
+                  <td>State (Up OR Down): {{ work }}</td>
+                </tr>
+
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <hr>
+
+            </table>
+
+
+
+            <br>
+
+
+<div style=" font-family: Courier New; font-size: 20px; color: white;">
+    <h3 style="color: white; text-decoration: underline; margin-left: -390px;">Ports Information :</h3>
+</div>
+
+<br>
+
+            <div style="overflow-x: scroll;">
+                
+                
+
+                <table style=" font-family: Courier New; font-size: 20px; color: white;">
+
+                
+                    
+                
+
+                {% block content %}
+
+
+
+                        <tr>
+                            <th style="float: left;">Port</th>
+                            <th style="padding-right: 50px;"> : </th>
+                            {% for op in op_pt %}
+                                <td style="width: 50px;padding-right: 40px;"> {{ op }}&nbsp; </td>
+                            {% endfor %}
+                        </tr>
+
+                        
+
+                        <tr>
+                        
+                            <th style="float: left;padding-top:1px">State</th>
+                            <th style="padding-right: 50px;padding-top:1px"> : </th>
+                            {% for sta_element in sta %}
+                                <td style="width: 50px;padding-right: 40px;padding-top:1px"> {{ sta_element }}&nbsp; </td>
+                            {% endfor %}
+
+                        
+                        </tr>
+
+                        <tr>
+                            <th style="float: left;padding-top:12px">Service</th>
+                            <th style="padding-right: 50px;padding-top:1px"> : </th>
+                            {% for serv_element in serv %}
+                                <td style="width: 50px;padding-right: 40px;padding-top:1px"> {{ serv_element }}&nbsp; </td>
+                            {% endfor %}
+                        </tr>
+                        <tr>
+                            <th style="float: left;padding-top:23px">Product</th>
+                            <th style="padding-right: 50px;padding-top:1px"> : </th>
+                            {% for prod_element in prod %}
+                                {% if prod_element =='' %}
+                                    <td style="width: 50px;padding-right: 40px;padding-top:1px"> Unknown </td>
+                                {% else %}
+                                    <td style="width: 50px;padding-right: 40px;padding-top:1px"> {{ prod_element }}&nbsp; </td>
+                                {% endif %}
+                            {% endfor %}
+                        </tr>
+
+                
+                {% endblock content %}
+              </table>
+              </div>
+
+</b>
+              </center>
+
+
+            </div>
+
+          </div>
+        </div>
+      </form>
+
+
+    </div>
+
+    <script src="{{ url_for('static', filename= 'scan/js/extention/choices.js') }}"></script>
+    <script>
+      const choices = new Choices('[data-trigger]',
+      {
+        searchEnabled: false,
+        itemSelectText: '',
+      });
+
+    </script>
+  </body>
+</html>

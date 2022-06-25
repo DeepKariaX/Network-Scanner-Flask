@@ -1,0 +1,97 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="colorlib.com">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400" rel="stylesheet" />
+    <link href="{{ url_for('static', filename= 'scan/css/main.css') }}" rel="stylesheet" />
+    
+    
+    
+    
+  </head>
+  <body>
+
+    <!-- {{ err }} -->
+    <script type="text/javascript">
+        a = "{{ err }}";
+        if (a == '')
+        {
+
+        }
+        else
+        {
+            alert("{{ err }}")
+        }
+    </script>
+
+    <div class="s132">
+      <form action="/scan_home" method="POST">
+        <div class="inner-form">
+          <div class="input-field first-wrap">
+
+
+
+            <div class="input-select">
+
+
+              <select data-trigger="" name="cat" required>
+                <option value="ip">IP Address</option>
+                <option value="url">Website URL</option>
+              </select>
+
+
+            </div>
+          </div>
+          
+          <div>
+          <div class="input-field second-wrap" id="cat_select">
+            <input name="ip_url" type="text" required placeholder="IP Or URL"/>
+          </div>
+          </div>
+
+          <div>
+          <div class="input-field" style="border: 1px solid rgba(255, 255, 255, 0.3);" id="port_select">
+            <input name="port_range" type="text" required placeholder="Port Range" />
+             
+          </div>
+          </div>
+
+          <div class="input-field first-wrap">
+            <div class="input-select">
+
+
+              <select data-trigger="" name="port_select" required>
+                <option value="open_pt">Open</option>
+                <option value="filt_pt">Filtered</option>
+              </select>
+
+
+            </div>
+          </div>
+
+          
+          <div class="input-field third-wrap">
+
+            <!-- <button class="btn-search" type="button" name="btn_s">Scan</button> -->
+            <input type="submit" class="btn-search" name="btn_s" value="Scan">
+
+          </div>
+          
+        </div>
+      </form>
+
+    </div>
+
+    <script src="{{ url_for('static', filename= 'scan/js/extention/choices.js') }}"></script>
+    <script>
+      const choices = new Choices('[data-trigger]',
+      {
+        searchEnabled: false,
+        itemSelectText: '',
+      });
+
+    </script>
+  </body>
+</html>
