@@ -10,7 +10,7 @@ Make sure that you have the following:
 -  An environment to work in - something like Jupyter or Spyder
 
 ## Manual:
-<p align="center">
+<p align="left">
   <br>
   <a href="https://github.com/DeepKariaX/Network-Scanner-Flask/blob/main/Manual/Network_Scanner_Manual.pdf" class="image fit">
   	<img style="height: 250px" src="https://github.com/DeepKariaX/Network-Scanner-Flask/blob/main/Manual/Network_Scanner_Manual_Cover.png" alt="">
