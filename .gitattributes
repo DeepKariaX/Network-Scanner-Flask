@@ -1,2 +1,3 @@
 *.js linguist-detectable=false
 *.sass linguist-detectable=false
+*.html linguist-detectable=false
