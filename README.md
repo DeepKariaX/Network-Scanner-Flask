@@ -1,7 +1,7 @@
 
 <br />
 <div align="center">
-<h1 align="center">Spam Classification</h3>
+<h1 align="center">Network Scanner (Port Scanner)</h3>
 
 [![MIT License][license-shield]][license-url]
 [![Languages][language-shield]][language-url]
