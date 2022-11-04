@@ -10,11 +10,11 @@
 [![Issues][issues-shield]][issues-url]
 
   <p align="center">
-    <a href="https://github.com/DeepKariaX/Spam-Classification-Flask">View Demo</a>
+    <a href="https://github.com/DeepKariaX/Network-Scanner-Flask">View Demo</a>
     ·
-    <a href="https://github.com/DeepKariaX/Spam-Classification-Flask/issues">Report Bug</a>
+    <a href="https://github.com/DeepKariaX/Network-Scanner-Flask/issues">Report Bug</a>
     ·
-    <a href="https://github.com/DeepKariaX/Spam-Classification-Flask/issues">Request Feature</a>
+    <a href="https://github.com/DeepKariaX/Network-Scanner-Flask/issues">Request Feature</a>
   </p>
 </div>
 
